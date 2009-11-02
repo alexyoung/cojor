@@ -1,0 +1,29 @@
+Colourful strings in Clojure.
+
+h3. Colours
+
+* red
+* green
+* yellow
+* blue
+* purple
+* lightblue
+* white
+
+h3. Examples
+
+Functions named after a colour will return a string wrapped with colour escape codes.  Functions postfixed with <code>ln</code> will print a line in that colour.
+
+<pre>
+(use 'cojor)
+(println (red "hello"))
+(println (green "hello"))
+(greenln "hello")
+(blueln "hello")
+</pre>
+
+All colour named methods call this function:
+
+<pre>
+(str-col :red "hello")
+</pre>
